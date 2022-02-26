@@ -7,6 +7,12 @@ This repository is used to store and host the landing page *(Nothing more, for n
 
 This page is fully optimized for computers. Mobile devices have been superficially tested and there may be inconsistencies on different devices *(Perhaps someday I will rewrite this on some framework to work correctly on mobile devices)*
 
+## About previous repo
+
+This is recreated repository for landing page, due to bloated `.git/objects` folder, because of older assets from previous versions, like large videos, photos, files and etc.
+
+In order to see older changes, go to [old repository](https://github.com/SecondThundeR/secondthunder-landing-page)
+
 ## License
 
 This repo is dual-licensed under the **Creative Commons Zero v1.0 Universal** *(for all media, e.g. favicons, etc.)* and **MIT License** *(for all code)*
