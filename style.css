@@ -161,7 +161,7 @@ h1 {
 }
 
 /* Define settings for button tag */
-button {
+input[type=button] {
     cursor: pointer;
     margin: 0;
     margin-top: 32px;
@@ -190,7 +190,7 @@ p {
 }
 
 /* Define settings for description text */
-#desc {
+.desc {
     font-size: 24px;
 }
 
@@ -200,7 +200,7 @@ p {
 }
 
 /* Define settings for h1, desc and span tag of social blocks */
-#social-h1.dimmed, #desc.social-dimmed {
+.social-h1.dimmed, .desc.social-dimmed {
     color: var(--social-dimmed);
 }
 
@@ -209,7 +209,7 @@ span.social {
 }
 
 /* Define settings for h1, desc and span tag of Spotify block */
-#spotify-h1, #desc.spotify {
+#spotify-h1, .desc.spotify {
     color: var(--spotify-dimmed);
 }
 
@@ -342,7 +342,7 @@ span#spotify {
     }
 
     /* Set color for theme-dimmed description */
-    #desc.theme-dimmed {
+    .desc.theme-dimmed {
         color: var(--text-dimmed);
     }
 
@@ -352,21 +352,21 @@ span#spotify {
     }
 
     /* Set color for button and its hover state */
-    button {
+    input[type=button] {
         background-color: var(--accent);
     }
 
-    button:hover {
+    input[type=button]:hover {
         background-color: var(--accent-hover);
     }
 
     /* Set color for social button and its hover state */
-    .social-btn {
+    input.social-btn {
         background-color: white;
         color: black;
     }
 
-    .social-btn:hover {
+    input.social-btn:hover {
         background-color: var(--accent);
         color: white;
     }
@@ -423,7 +423,7 @@ span#spotify {
     }
 
     /* Set color for theme-dimmed description */
-    #desc.theme-dimmed {
+    .desc.theme-dimmed {
         color: var(--text-dimmed);
     }
 
@@ -433,21 +433,21 @@ span#spotify {
     }
 
     /* Set color for button and its hover state */
-    button {
+    input[type=button] {
         background-color: var(--accent);
     }
 
-    button:hover {
+    input[type=button]:hover {
         background-color: var(--accent-hover);
     }
 
     /* Set color for social button and its hover state */
-    .social-btn {
+    input.social-btn {
         background-color: white;
         color: black;
     }
 
-    .social-btn:hover {
+    input.social-btn:hover {
         background-color: var(--accent);
         color: white;
     }
@@ -492,7 +492,7 @@ span#spotify {
         height: 196px;
     }
 
-    button {
+    input[type=button] {
         padding: 18px 24px;
         font-size: 20px;
         font-weight: 400;
@@ -509,7 +509,7 @@ span#spotify {
         width: fit-content;
     }
 
-    #landscape-elements {
+    .landscape-elements {
         width: 55%;
     }
 
@@ -541,7 +541,7 @@ span#spotify {
         height: 208px;
     }
 
-    button {
+    input[type=button] {
         padding: 18px 24px;
         font-size: 20px;
         font-weight: 400;
