@@ -11,7 +11,7 @@ This page is fully optimized for computers. Mobile devices have been superficial
 
 This is recreated repository for landing page, due to bloated `.git/objects` folder, because of older assets from previous versions, like large videos, photos, files and etc.
 
-In order to see older changes, go to [old repository](https://github.com/SecondThundeR/archivied-landing-page)
+In order to see older changes, go to [old repository](https://github.com/SecondThundeR/archived-landing-page)
 
 ## License
 
