@@ -42,8 +42,6 @@ head, ::-webkit-scrollbar {
 html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
 /* Define settings of hostCont */
@@ -53,8 +51,7 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Define settings for "Scroll down" tip container */
@@ -72,7 +69,7 @@ html, body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     padding: 18px;
 }
 
@@ -84,7 +81,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 50%;
+    width: 85%;
     height: fit-content;
     margin: auto;
 }
@@ -152,7 +149,7 @@ h1 {
     cursor: default;
     margin-top: 32px;
     margin-bottom: 12px;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 /* Define settings for h1 tag on 404 page */
@@ -233,8 +230,8 @@ span#spotify {
 /* Define settings of site's 404 icon */
 #fourzerofour-icon {
     display: inline-block;
-    width: 192px;
-    height: 192px;
+    width: 164px;
+    height: 164px;
     background-size: cover;
 }
 
@@ -254,8 +251,8 @@ span#spotify {
 /* Define settings for logos */
 .logo {
     display: inline-block;
-    width: 192px;
-    height: 192px;
+    width: 164px;
+    height: 164px;
     background-size: cover;
 }
 
@@ -514,7 +511,8 @@ span#spotify {
     }
 
     h1 {
-        font-size: 28px;
+        margin-top: 0;
+        font-size: 36px;
     }
 
     p {
@@ -525,10 +523,22 @@ span#spotify {
         font-size: 0 !important;
     }
 
+    .landscape-elements {
+        margin-left: 10%;
+    }
+
+    #footerCont-elements > span {
+        display: none;
+        margin-left: 0;
+    }
+
+    #footerCont-elements > .landscape-elements {
+        margin-left: 0;
+    }
+
     #fourzerofour-icon, .logo {
         width: 144px;
         height: 144px;
-        margin-right: 10%;
     }
 
     .icon {
@@ -542,7 +552,6 @@ span#spotify {
     }
 
     input[type=button] {
-        padding: 18px 24px;
         font-size: 20px;
         font-weight: 400;
         border-radius: 12px;
