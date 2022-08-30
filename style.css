@@ -34,12 +34,14 @@
 }
 
 /* Make scrollbar and head elements invisible */
-head, ::-webkit-scrollbar {
+head,
+::-webkit-scrollbar {
     display: none;
 }
 
 /* Define default html and body settings */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -61,8 +63,18 @@ html, body {
 }
 
 /* Define subcontainers settings */
-#mainCont, #vkCont, #tgCont, #igCont, #twitterCont, #discordCont, #lastfmCont,
-#githubCont, #codeStatsCont, #spotifyCont, #playlistCont, #footerCont {
+#mainCont,
+#vkCont,
+#tgCont,
+#igCont,
+#twitterCont,
+#discordCont,
+#lastfmCont,
+#githubCont,
+#codeStatsCont,
+#spotifyCont,
+#playlistCont,
+#footerCont {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -74,8 +86,18 @@ html, body {
 }
 
 /* Define settings of elements containers */
-#mainCont-elements, #vkCont-elements, #tgCont-elements, #igCont-elements, #twitterCont-elements, #discordCont-elements, #lastfmCont-elements,
-#githubCont-elements, #codeStatsCont-elements, #spotifyCont-elements, #playlistCont-elements, #footerCont-elements {
+#mainCont-elements,
+#vkCont-elements,
+#tgCont-elements,
+#igCont-elements,
+#twitterCont-elements,
+#discordCont-elements,
+#lastfmCont-elements,
+#githubCont-elements,
+#codeStatsCont-elements,
+#spotifyCont-elements,
+#playlistCont-elements,
+#footerCont-elements {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,8 +109,10 @@ html, body {
 }
 
 /* Define special transitions for some containers */
-#mainCont, #footerCont,
-#mainCont-elements, #scrollTip {
+#mainCont,
+#footerCont,
+#mainCont-elements,
+#scrollTip {
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     -o-transition-duration: 0.4s;
@@ -98,7 +122,8 @@ html, body {
 
 
 /* Define default opacity of elements mainCont and scrollTip onload */
-#mainCont-elements, #scrollTip {
+#mainCont-elements,
+#scrollTip {
     opacity: 0;
 }
 
@@ -140,8 +165,8 @@ html, body {
 }
 
 #playlistCont {
-    background: rgb(255,46,99);
-    background: linear-gradient(45deg, rgba(255,46,99,1) 0%, rgba(255,157,157,1) 100%);
+    background: rgb(255, 46, 99);
+    background: linear-gradient(45deg, rgba(255, 46, 99, 1) 0%, rgba(255, 157, 157, 1) 100%);
 }
 
 /* Define settings for h1 tag */
@@ -201,7 +226,8 @@ p {
 }
 
 /* Define settings for h1, desc and span tag of social blocks */
-.social-h1.dimmed, .desc.social-dimmed {
+.social-h1.dimmed,
+.desc.social-dimmed {
     color: var(--social-dimmed);
 }
 
@@ -210,7 +236,8 @@ span.social {
 }
 
 /* Define settings for h1, desc and span tag of Spotify block */
-#spotify-h1, .desc.spotify {
+#spotify-h1,
+.desc.spotify {
     color: var(--spotify-dimmed);
 }
 
@@ -249,7 +276,7 @@ span#spotify {
 
 /* Define dimming for arrow icon */
 #arrow-down {
-    filter: opacity(40%);
+    filter: opacity(60%);
 }
 
 /* Define settings for logos */
@@ -303,11 +330,12 @@ span#spotify {
 
 /* Define settings for light theme */
 @media (prefers-color-scheme: light) {
+
     /* Define colors for light theme */
     :root {
         --text-normal: rgb(0, 0, 0);
         --text-dimmed: rgba(0, 0, 0, 0.5);
-        --text-tip: rgba(0, 0, 0, 0.4);
+        --text-tip: rgba(0, 0, 0, 0.6);
         --accent: rgb(179, 30, 87);
         --accent-hover: rgb(240, 42, 118);
         --background-main: rgb(255, 255, 255);
@@ -384,11 +412,12 @@ span#spotify {
 
 /* Define settings for dark theme */
 @media (prefers-color-scheme: dark) {
+
     /* Define colors for dark theme */
     :root {
         --text-normal: rgb(255, 255, 255);
         --text-dimmed: rgba(255, 255, 255, 0.6);
-        --text-tip: rgba(255, 255, 255, 0.4);
+        --text-tip: rgba(255, 255, 255, 0.6);
         --accent: rgb(230, 115, 159);
         --accent-hover: rgb(184, 62, 108);
         --background-main: rgb(18, 18, 18);
@@ -465,9 +494,19 @@ span#spotify {
 
 /* Rules for regular phones in portait mode */
 @media (max-height: 850px) and (orientation: portrait) {
-    #mainCont-elements, #vkCont-elements, #tgCont-elements, #discordCont-elements,
-    #igCont-elements, #twitterCont-elements, #lastfmCont-elements, #githubCont-elements,
-    #codeStatsCont-elements, #spotifyCont-elements, #playlistCont-elements, #footerCont-elements {
+
+    #mainCont-elements,
+    #vkCont-elements,
+    #tgCont-elements,
+    #discordCont-elements,
+    #igCont-elements,
+    #twitterCont-elements,
+    #lastfmCont-elements,
+    #githubCont-elements,
+    #codeStatsCont-elements,
+    #spotifyCont-elements,
+    #playlistCont-elements,
+    #footerCont-elements {
         width: fit-content;
     }
 
@@ -483,7 +522,8 @@ span#spotify {
         font-size: 18px !important;
     }
 
-    #fourzerofour-icon, .logo {
+    #fourzerofour-icon,
+    .logo {
         width: 128px;
         height: 128px;
     }
@@ -503,9 +543,19 @@ span#spotify {
 
 /* Rules for regular phones landscape */
 @media (max-width: 1000px) and (orientation: landscape) {
-    #mainCont-elements, #vkCont-elements, #tgCont-elements, #discordCont-elements,
-    #igCont-elements, #twitterCont-elements, #lastfmCont-elements, #githubCont-elements,
-    #codeStatsCont-elements, #spotifyCont-elements, #playlistCont-elements, #footerCont-elements {
+
+    #mainCont-elements,
+    #vkCont-elements,
+    #tgCont-elements,
+    #discordCont-elements,
+    #igCont-elements,
+    #twitterCont-elements,
+    #lastfmCont-elements,
+    #githubCont-elements,
+    #codeStatsCont-elements,
+    #spotifyCont-elements,
+    #playlistCont-elements,
+    #footerCont-elements {
         flex-direction: row;
         width: fit-content;
     }
@@ -531,16 +581,17 @@ span#spotify {
         margin-left: 10%;
     }
 
-    #footerCont-elements > span {
+    #footerCont-elements>span {
         display: none;
         margin-left: 0;
     }
 
-    #footerCont-elements > .landscape-elements {
+    #footerCont-elements>.landscape-elements {
         margin-left: 0;
     }
 
-    #fourzerofour-icon, .logo {
+    #fourzerofour-icon,
+    .logo {
         width: 144px;
         height: 144px;
     }
