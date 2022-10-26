@@ -7,6 +7,8 @@ This repository is used to store and host the landing page *(Nothing more, for n
 
 This page is fully optimized for computers. Mobile devices have been superficially tested and there may be inconsistencies on different devices *(Perhaps someday I will rewrite this on some framework to work correctly on mobile devices)*
 
+> Note: Other folders (different from assets/ and favicons/) are used in redirects. E.g. secondthunder.github.com/vk -> vk.com/secondthunder
+
 ## About previous repo
 
 This is recreated repository for landing page, due to bloated `.git/objects` folder, because of older assets from previous versions, like large videos, photos, files and etc.
