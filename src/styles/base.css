@@ -5,8 +5,13 @@
 @tailwind utilities;
 
 @layer base {
+    head,
+    ::-webkit-scrollbar {
+        @apply hidden;
+    }
+
     html {
-        @apply font-['Ubuntu'] scroll-smooth;
+        @apply font-['Ubuntu'];
     }
 
     head,
