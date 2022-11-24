@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply font-['Ubuntu'] scroll-smooth;
+    }
+
+    head,
+    body {
+        @apply bg-background-light dark:bg-background-dark text-black dark:text-white;
+    }
+}

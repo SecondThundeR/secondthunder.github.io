@@ -1,0 +1,71 @@
+---
+import Layout from "@layouts/Main.astro";
+import ProfileBlock from "@components/Profile/Block.astro";
+import SocialBlock from "@components/Social/Block.astro";
+import PlaylistBlock from "@components/Social/PlaylistBlock.astro";
+import FooterBlock from "@components/Footer/Block.astro";
+
+import AvatarImage from "@assets/images/avatar.jpeg";
+
+import "@styles/base.css";
+---
+
+<Layout title="Project Aether">
+    <ProfileBlock
+        name="SecondThundeR"
+        description="Welcome to my page!"
+        avatar={AvatarImage}
+    />
+    <SocialBlock
+        name="VK"
+        description="First social network where I signed up"
+        link="https://vk.com/secondthunder"
+    />
+    <SocialBlock
+        name="Telegram"
+        description="Messenger where I spend most of my time"
+        link="tg://resolve?domain=secondthunder"
+    />
+    <SocialBlock
+        name="Instagram"
+        description="Favorite place to share photos"
+        link="https://instagram.com/AwayFromGalaxy"
+    />
+    <SocialBlock
+        name="Twitter"
+        description="Lurking mostly, so I don't find myself very often there"
+        link="https://twitter.com/scndthndr"
+    />
+    <SocialBlock
+        name="Discord"
+        description="Place where I mostly online"
+        link="https://twitter.com/scndthndr"
+    />
+    <SocialBlock
+        name="Last.fm"
+        description="Platform where I show all my taste in the music world"
+        link="https://twitter.com/scndthndr"
+    />
+    <SocialBlock
+        name="Github"
+        description="Hosting my hobby repositories here"
+        link="https://twitter.com/scndthndr"
+    />
+    <SocialBlock
+        name="Code::Stats"
+        description="Place where you I share my coding activity"
+        link="https://twitter.com/scndthndr"
+    />
+    <SocialBlock
+        name="Spotify"
+        description="Beloved streaming service that I absolutely adore"
+        link="https://twitter.com/scndthndr"
+        invert
+    />
+    <PlaylistBlock
+        where="Spotify"
+        description="My self-made playlist on Spotify, which I advise you to listen"
+        link="https://open.spotify.com/playlist/0pbiT1B1enVz4ZZ4ISreYo"
+    />
+    <FooterBlock />
+</Layout>

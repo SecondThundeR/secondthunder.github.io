@@ -1,0 +1,15 @@
+---
+export interface Props {
+    invert?: boolean;
+}
+
+const { invert = false } = Astro.props;
+---
+
+<h1
+    class={`cursor-default mt-8 mb-3 text-4xl font-bold ${
+        invert ? "text-social-dark" : "text-social-light"
+    }`}
+>
+    <slot />
+</h1>

@@ -1,0 +1,30 @@
+---
+export interface Props {
+    name: string;
+    link: string;
+}
+
+const { name, link } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="description" content="SecondThundeR's Redirect Page" />
+        <meta http-equiv="refresh" content={`0; url=${link}`} />
+        <script type="text/javascript">
+            window.location.href = { link };
+        </script>
+        <title>Redirect to {name}</title>
+    </head>
+    <body>
+        <main
+            class="h-screen w-screen p-5 flex text-center justify-center items-center"
+        >
+            <slot />
+        </main>
+    </body>
+</html>

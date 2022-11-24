@@ -1,0 +1,16 @@
+<button
+    id="scroll"
+    class="cursor-pointer m-0 mt-7 py-5 px-8 text-2xl font-[400] rounded-2xl outline-none appearance-none transition-all duration-300 bg-accent-light hover:bg-accent-light-hover dark:bg-accent-dark dark:hover:bg-accent-dark-hover text-white border-none"
+>
+    Scroll up
+</button>
+
+<script>
+    const scrollButton = document.getElementById("scroll")!;
+
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+        });
+    });
+</script>

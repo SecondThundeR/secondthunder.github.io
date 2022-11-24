@@ -1,0 +1,13 @@
+---
+export interface Props {
+    avatar: string;
+}
+
+const { avatar } = Astro.props;
+---
+
+<img
+    src={avatar}
+    alt="Avatar Image"
+    class="inline-block m-0 p-0 w-[224px] h-[224px] border-[14px] border-accent-light dark:border-accent-dark rounded-full"
+/>

@@ -1,0 +1,20 @@
+---
+import BlockLayout from "@layouts/Block.astro";
+import LandscapeContainer from "@layouts/LandscapeContainer.astro";
+import HideContainer from "@layouts/HideContainer.astro";
+import WarningIcon from "./WarningIcon.astro";
+import Heading from "./Heading.astro";
+import Description from "./Description.astro";
+import Button from "./Button.astro";
+---
+
+<BlockLayout>
+    <HideContainer>
+        <WarningIcon />
+    </HideContainer>
+    <LandscapeContainer>
+        <Heading />
+        <Description />
+        <Button />
+    </LandscapeContainer>
+</BlockLayout>

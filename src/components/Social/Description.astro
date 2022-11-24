@@ -1,0 +1,11 @@
+---
+export interface Props {
+    invert?: boolean;
+}
+
+const { invert = false } = Astro.props;
+---
+
+<p class={`text-2xl ${invert ? "text-black" : "text-white"}`}>
+    <slot />
+</p>

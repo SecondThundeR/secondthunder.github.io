@@ -5,15 +5,9 @@
 
 This repository is used to store and host the landing page *(Nothing more, for now)*
 
-This page is fully optimized for computers. Mobile devices have been superficially tested and there may be inconsistencies on different devices *(Perhaps someday I will rewrite this on some framework to work correctly on mobile devices)*
+This landing page is built using Astro for best performance. The styling uses Tailwind CSS with custom settings. The page also supports redirects to some links, just write `/r/{service-name}` after the main link
 
-> Note: Other folders (different from assets/ and favicons/) are used in redirects. E.g. secondthunder.github.com/vk -> vk.com/secondthunder
-
-## About previous repo
-
-This is recreated repository for landing page, due to bloated `.git/objects` folder, because of older assets from previous versions, like large videos, photos, files and etc.
-
-In order to see older changes, go to [old repository](https://github.com/SecondThundeR/archived-landing-page)
+> Note: In the future this page will be completely redesigned and switching the current version to Astro is necessary for comfortable development over time
 
 ## License
 

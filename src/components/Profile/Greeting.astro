@@ -1,0 +1,11 @@
+---
+export interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<h1 class="cursor-default mt-8 mb-3 text-4xl font-bold">
+    Hi! I'm <span class="text-accent-light dark:text-accent-dark">{name}</span>!
+</h1>

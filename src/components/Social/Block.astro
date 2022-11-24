@@ -1,0 +1,50 @@
+---
+import BlockLayout from "@layouts/Block.astro";
+import LandscapeContainer from "@layouts/LandscapeContainer.astro";
+import Icon from "./Icon.astro";
+import Name from "./Name.astro";
+import Title from "./Title.astro";
+import Description from "./Description.astro";
+import Button from "./Button.astro";
+
+export interface Props {
+    name: string;
+    description: string;
+    link: string;
+    invert?: boolean;
+}
+
+const { name, description, link, invert = false } = Astro.props;
+
+const blockColors: {
+    [key: string]: string;
+} = {
+    VK: "bg-social-vk dark:bg-social-vk/70",
+    Telegram: "bg-social-telegram dark:bg-social-telegram/70",
+    Instagram:
+        "bg-gradient-to-bl from-social-ig-start via-social-ig-middle to-social-ig-end dark:from-social-ig-start/70 dark:via-social-ig-middle/70 dark:to-social-ig-end/70",
+    Twitter: "bg-social-twitter dark:bg-social-twitter/70",
+    Discord: "bg-social-discord dark:bg-social-discord/70",
+    "Last.fm": "bg-social-lastfm dark:bg-social-lastfm/70",
+    Github: "bg-social-github dark:bg-social-github/70",
+    "Code::Stats": "bg-social-codestats dark:bg-social-codestats/70",
+    Spotify: "bg-social-spotify dark:bg-social-spotify/70",
+    playlist:
+        "bg-gradient-to-bl from-social-playlist-start dark:from-social-playlist-start/70 to-social-playlist-end dark:to-social-playlist-end/70",
+};
+
+const blockColor = blockColors[name];
+---
+
+<BlockLayout color={blockColor}>
+    <Icon name={name} alt={`${name} icon`} />
+    <LandscapeContainer>
+        <Title invert={invert}>
+            Here I am in <Name invert={invert}>{name}</Name>
+        </Title>
+        <Description invert={invert}>
+            {description}
+        </Description>
+        <Button link={link}>Go to {name}</Button>
+    </LandscapeContainer>
+</BlockLayout>

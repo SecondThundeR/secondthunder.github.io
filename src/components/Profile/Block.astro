@@ -1,0 +1,25 @@
+---
+import BlockLayout from "@layouts/Block.astro";
+import LandscapeContainer from "@layouts/LandscapeContainer.astro";
+import Avatar from "./Avatar.astro";
+import Greeting from "./Greeting.astro";
+import Description from "./Description.astro";
+import ScrollTip from "./ScrollTip.astro";
+
+export interface Props {
+    name: string;
+    description: string;
+    avatar: string;
+}
+
+const { name, description, avatar } = Astro.props;
+---
+
+<BlockLayout>
+    <Avatar avatar={avatar} />
+    <LandscapeContainer>
+        <Greeting name={name} />
+        <Description description={description} />
+        <ScrollTip />
+    </LandscapeContainer>
+</BlockLayout>
