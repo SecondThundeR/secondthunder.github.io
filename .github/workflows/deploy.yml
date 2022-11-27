@@ -19,8 +19,8 @@ jobs:
             - name: Install, build, and upload your site
               uses: SecondThundeR/action@v0.2.0
               with:
-                node-version: 16
-                package-manager: yarn
+                  node-version: 16
+                  package-manager: yarn
 
     deploy:
         needs: build
@@ -31,4 +31,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v1.0.5
+              uses: actions/deploy-pages@v1.2.3
