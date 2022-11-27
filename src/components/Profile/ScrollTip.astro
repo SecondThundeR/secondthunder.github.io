@@ -4,7 +4,7 @@ import HideContainer from "@layouts/HideContainer.astro";
 ---
 
 <div
-    id="cont"
+    id="scroll-tip-cont"
     class="absolute bottom-[2%] transition-all duration-75 flex flex-col items-center"
 >
     <HideContainer>
@@ -25,7 +25,8 @@ import HideContainer from "@layouts/HideContainer.astro";
             if (currentScroll <= scrollCheckpoint)
                 opacity = 1 - currentScroll / scrollCheckpoint;
             else opacity = 0;
-            document.getElementById("cont")!.style.opacity = String(opacity);
+            document.getElementById("scroll-tip-cont")!.style.opacity =
+                String(opacity);
         },
         {
             passive: true,
