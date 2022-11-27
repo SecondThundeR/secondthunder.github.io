@@ -17,7 +17,7 @@ jobs:
             - name: Checkout your repository using git
               uses: actions/checkout@v3
             - name: Install, build, and upload your site
-              uses: withastro/action@v0.1.9
+              uses: SecondThundeR/action@v0.2.0
               with:
                 node-version: 16
                 package-manager: yarn
@@ -31,4 +31,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v1
+              uses: actions/deploy-pages@v1.0.5
