@@ -1,4 +1,6 @@
 ---
+import "@styles/base.css";
+
 export interface Props {
     name: string;
     link: string;
@@ -24,7 +26,14 @@ const { name, link } = Astro.props;
         <main
             class="h-screen w-screen p-5 flex text-center justify-center items-center"
         >
-            <slot />
+            <h1 class="text-2xl font-medium">
+                If you are not redirected automatically, follow this <a
+                    class="text-accent-light hover:text-accent-light-hover dark:text-accent-dark dark:hover:text-accent-dark-hover transition-all duration-300"
+                    href={link}
+                >
+                    link
+                </a>
+            </h1>
         </main>
     </body>
 </html>
