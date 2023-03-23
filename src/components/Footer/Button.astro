@@ -5,13 +5,13 @@
     Scroll up
 </button>
 
-<script>
-    const scrollButton = document.getElementById("scroll")!;
-
-    scrollButton.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
+<script is:inline>
+    const scrollButton = document.getElementById("scroll");
+    if (scrollButton !== null)
+        scrollButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
         });
-    });
 </script>

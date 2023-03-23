@@ -15,18 +15,20 @@ import HideContainer from "@layouts/HideContainer.astro";
     </HideContainer>
 </div>
 
-<script>
+<script is:inline>
     document.addEventListener(
         "scroll",
         () => {
             const scrollCheckpoint = 600;
             const currentScroll = window.pageYOffset;
-            let opacity: number;
+            const scrollTipCont = document.getElementById("scroll-tip-cont");
+            let opacity = 0;
+
             if (currentScroll <= scrollCheckpoint)
                 opacity = 1 - currentScroll / scrollCheckpoint;
-            else opacity = 0;
-            document.getElementById("scroll-tip-cont")!.style.opacity =
-                String(opacity);
+
+            if (scrollTipCont !== null)
+                scrollTipCont.style.opacity = String(opacity);
         },
         {
             passive: true,
