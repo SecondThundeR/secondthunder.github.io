@@ -9,7 +9,8 @@
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "lint": "eslint --ext .js,.astro src"
     },
     "dependencies": {
         "@astrojs/tailwind": "^3.1.1",
