@@ -14,12 +14,12 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout your repository using git
-              uses: actions/checkout@v3
-            - name: Install, build, and upload your site
-              uses: SecondThundeR/action@v0.2.0
+            - name: Checkout repository
+              uses: actions/checkout@v3.5.3
+            - name: Install, build, and upload site
+              uses: withastro/action@v0.2.0
               with:
-                  node-version: 16
+                  node-version: 18
                   package-manager: pnpm
 
     deploy:
@@ -31,4 +31,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v1.2.3
+              uses: actions/deploy-pages@v2.0.2
