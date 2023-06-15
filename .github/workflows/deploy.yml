@@ -15,11 +15,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3.5.3
+              uses: actions/checkout@v3
             - name: Install, build, and upload site
-              uses: withastro/action@v0.2.0
+              uses: SecondThundeR/action@v2
               with:
-                  node-version: 18
                   package-manager: pnpm
 
     deploy:
@@ -31,4 +30,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v2.0.2
+              uses: actions/deploy-pages@v2
