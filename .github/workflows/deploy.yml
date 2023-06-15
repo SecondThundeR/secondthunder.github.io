@@ -20,7 +20,7 @@ jobs:
               uses: SecondThundeR/action@v0.2.0
               with:
                   node-version: 16
-                  package-manager: yarn
+                  package-manager: pnpm
 
     deploy:
         needs: build
