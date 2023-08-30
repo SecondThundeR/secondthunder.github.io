@@ -3,6 +3,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "css.lint.unknownAtRules": "ignore",
+    "prettier.documentSelectors": ["**/*.astro"],
     "eslint.validate": [
         "javascript",
         "javascriptreact",
