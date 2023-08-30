@@ -4,12 +4,10 @@ export interface Props {
 }
 
 const { invert = false } = Astro.props;
+const invertSocialTextClass = invert ? "text-social-dark" : "text-social-light";
+const titleClass = `cursor-default mt-8 mb-3 text-4xl font-bold ${invertSocialTextClass}`;
 ---
 
-<h1
-    class={`cursor-default mt-8 mb-3 text-4xl font-bold ${
-        invert ? "text-social-dark" : "text-social-light"
-    }`}
->
+<h1 class={titleClass}>
     <slot />
 </h1>

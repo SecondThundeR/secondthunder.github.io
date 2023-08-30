@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import VKIcon from "@assets/icons/VK.svg";
 import TelegramIcon from "@assets/icons/Telegram.svg";
 import InstagramIcon from "@assets/icons/Instagram.svg";
@@ -15,9 +17,7 @@ export interface Props {
     alt: string;
 }
 
-const iconsPaths: {
-    [key: string]: string;
-} = {
+const iconsPaths: Record<string, ImageMetadata> = {
     VK: VKIcon,
     Telegram: TelegramIcon,
     Instagram: InstagramIcon,
@@ -35,8 +35,8 @@ const { name, alt } = Astro.props;
 const iconPath = iconsPaths[name];
 ---
 
-<img
+<Image
     src={iconPath}
-    class={`inline-block w-32 h-32 landscape:w-32 landscape:h-32 sm:w-[164px] sm:h-[164px] bg-cover`}
     alt={alt}
+    class="inline-block w-32 h-32 landscape:w-32 landscape:h-32 sm:w-[164px] sm:h-[164px] bg-cover"
 />

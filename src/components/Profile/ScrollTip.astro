@@ -20,7 +20,7 @@ import HideContainer from "@layouts/HideContainer.astro";
         "scroll",
         () => {
             const scrollCheckpoint = 600;
-            const currentScroll = window.pageYOffset;
+            const currentScroll = window.scrollY;
             const scrollTipCont = document.getElementById("scroll-tip-cont");
             let opacity = 0;
 

@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { invert = false } = Astro.props;
+const nameClass = invert ? "text-black" : "text-white";
 ---
 
-<span class={`${invert ? "text-black" : "text-white"}`}><slot /></span>
+<span class={nameClass}><slot /></span>

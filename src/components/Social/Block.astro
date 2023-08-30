@@ -16,9 +16,7 @@ export interface Props {
 
 const { name, description, link, invert = false } = Astro.props;
 
-const blockColors: {
-    [key: string]: string;
-} = {
+const blockColors: Record<string, string> = {
     VK: "bg-social-vk dark:bg-social-vk/70",
     Telegram: "bg-social-telegram dark:bg-social-telegram/70",
     Instagram:
