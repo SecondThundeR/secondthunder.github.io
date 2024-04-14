@@ -29,11 +29,6 @@ module.exports = {
                     lastfm: "#D60603",
                     github: "#181515",
                     codestats: "#3E4053",
-                    spotify: "#1CD760",
-                    playlist: {
-                        start: "rgba(255, 157, 157, 1)",
-                        end: "rgba(255, 46, 99, 1)",
-                    },
                 },
                 background: {
                     light: "rgb(255, 255, 255)",
