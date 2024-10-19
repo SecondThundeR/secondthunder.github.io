@@ -7,11 +7,12 @@
 
 <script is:inline>
     const scrollButton = document.getElementById("scroll");
-    if (scrollButton !== null)
+    if (scrollButton !== null) {
         scrollButton.addEventListener("click", () => {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",
             });
         });
+    }
 </script>

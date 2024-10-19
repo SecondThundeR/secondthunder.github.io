@@ -15,12 +15,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4.2.1
             - name: Install, build, and upload site
-              uses: withastro/action@v0.3.0
+              uses: withastro/action@v3.0.0
               with:
                   package-manager: pnpm
-                  pnpm-version: 8.x.x
+                  pnpm-version: 9.x.x
 
     deploy:
         needs: build
@@ -31,4 +31,4 @@ jobs:
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
-              uses: actions/deploy-pages@v2
+              uses: actions/deploy-pages@v4.0.5

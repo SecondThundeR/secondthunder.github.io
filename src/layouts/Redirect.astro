@@ -17,8 +17,8 @@ const { name, link } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="description" content="SecondThundeR's Redirect Page" />
         <meta http-equiv="refresh" content={`0; url=${link}`} />
-        <script type="text/javascript">
-            window.location.href = { link };
+        <script is:inline>
+            window.location.href = link;
         </script>
         <title>Redirect to {name}</title>
     </head>
