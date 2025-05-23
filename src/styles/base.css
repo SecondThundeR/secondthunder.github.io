@@ -1,8 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-*: initial;
+  --font-custom: Ubuntu, sans-serif;
+
+  --color-accent-light: rgb(179, 30, 87);
+  --color-accent-light-hover: rgb(240, 42, 118);
+  --color-accent-dark: rgb(230, 115, 159);
+  --color-accent-dark-hover: rgb(184, 62, 108);
+
+  --color-dimmed-light: rgba(0, 0, 0, 0.7);
+  --color-dimmed-dark: rgba(255, 255, 255, 0.7);
+
+  --color-social-light: rgba(255, 255, 255, 0.8);
+  --color-social-dark: rgba(0, 0, 0, 0.8);
+  --color-social-vk: #0077ff;
+  --color-social-telegram: #54a9eb;
+
+  --color-social-ig-start: #833ab4;
+  --color-social-ig-middle: #f56040;
+  --color-social-ig-end: #ffdc80;
+
+  --color-social-twitter: #1d9bf1;
+  --color-social-discord: #5765f3;
+  --color-social-lastfm: #d60603;
+  --color-social-github: #181515;
+  --color-social-codestats: #3e4053;
+
+  --color-background-light: rgb(255, 255, 255);
+  --color-background-dark: rgb(18, 18, 18);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @layer base {
     head,
