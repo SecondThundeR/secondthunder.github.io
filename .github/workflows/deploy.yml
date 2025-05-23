@@ -15,11 +15,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v4.2.1
+              uses: actions/checkout@v4.2.2
             - name: Install, build, and upload site
-              uses: withastro/action@v3.0.0
+              uses: withastro/action@v4.0.0
               with:
-                  package-manager: pnpm
+                  node-version: 22
+                  package-manager: pnpm@latest
 
     deploy:
         needs: build
