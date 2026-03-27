@@ -4,9 +4,5 @@
     },
     "css.lint.unknownAtRules": "ignore",
     "prettier.documentSelectors": ["**/*.astro"],
-    "eslint.validate": [
-        "javascript",
-        "astro", // Enable .astro
-        "typescript" // Enable .ts
-    ]
+    "eslint.validate": ["javascript", "astro", "typescript"]
 }

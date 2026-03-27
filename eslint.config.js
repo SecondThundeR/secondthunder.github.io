@@ -1,6 +1,9 @@
 import eslintPluginAstro from "eslint-plugin-astro";
 
 export default [
+    {
+        ignores: ["*.mjs"],
+    },
     ...eslintPluginAstro.configs.recommended,
     {
         rules: {
